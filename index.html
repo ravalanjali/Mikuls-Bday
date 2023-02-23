@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Mahek's B'day</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body,
+    h2,
+    h4 {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    }
+
+    body::-webkit-scrollbar{
+      display: none;
+    }
+    .text{
+      text-shadow: 0 0 10px #000;
+    }
+    .bgimg {
+      background: url('Bg1.jpg');
+      background-position: center;
+      background-size: cover;
+    }
+    @media screen and (max-width:600px) {
+      body .bgimg{
+        background: url('a.jpeg');
+        background-position-x: center;
+      }
+    }
+    .text-opacity{
+      background-color: #0000009d;
+    }
+    .arrow{
+      animation: arr 1s     infinite linear;
+      transition: all .5s linear;
+    }
+    @keyframes arr {
+      0%{
+        transform: translateX(0%);
+        color: yellow;
+      }
+      50%{
+        transform: translateX(-5%);
+        color: white;
+
+      }
+      100%{
+        transform: translateX(0%);
+        color: yellow;
+
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="bgimg w-screen h-screen relative">
+    <div class="absolute top-0">
+      <img alt="" class="w-[100px] h-[100px]"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhuS0TOB-zw0bpEdB5zpjKODlY4KFlFr9w0wHHLDXhQF9t5v5NAi9XC8eqJP6xD6cPdBg&usqp=CAU">
+    </div>
+    <div class="text-center p-28 gap-4 text-opacity     flex flex-col justify-end  shadow-2xl items-end w-screen h-screen">
+      <h2 class="sm:text-7xl text-3xl p-3 backdrop-blur-3xl rounded-full shadow-2xl text text-cyan-100">HAPPIESTT <span class="text-yellow-300 text">
+        BIRTHDAYYY!!
+      </span></h1>
+        <h4 class="backdrop-blur-3xl text-2xl flex flex-col sm:text-5xl p-5 gap-3 rounded-full text-slate-300 text"> <span class="text-white">MIKUDAAAA!!</span> 
+          <span class="text-cyan-300">
+          LOTS OF LOVE BABYY!!
+        </span> </h4>
+    </div>
+    <div class=" pr-10 pl-10 flex justify-between absolute bottom-4 text-cyan-200  backdrop-blur-lg shadow-2xl rounded-full p-5 text-xs text-center w-full sm:text-2xl">
+       <span class="text-cyan-200 text" >Made by <span class="text-cyan-400">ANJU </span></span>
+      <i class="flex arrow text-2xl sm:text-5xl justify-center items-center text cursor-pointer " onclick="window.open('Temp2.html')">>></i>
+    </div>
+  </div>
+
+</body>
+
+</html>
